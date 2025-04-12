@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "ES6 Syntax Check",
+      "setup": "npm install eslint eslint-plugin-import --save-dev",
+      "run": "npx eslint --no-eslintrc --parser-options=ecmaVersion:6 --parser-options=sourceType:module --rule 'no-var:error' *.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Hello World Output Check",
+      "setup": "",
+      "run": "node index.js",
+      "input": "",
+      "output": "hello world",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
